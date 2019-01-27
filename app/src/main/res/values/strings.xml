@@ -4,5 +4,5 @@
     <string name="input_note_text">Input note text:</string>
     <string name="button_save">Save</string>
     <string name="button_cancel">Cancel</string>
-    <string name="ts_ver_text">ver.%d created: %s updated: %s</string>
+    <string name="ts_ver_text">ver.%d   \t created: %s   \t updated: %s</string>
 </resources>

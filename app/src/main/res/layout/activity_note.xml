@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/note_header"
-        android:textSize="28sp"/>
+        android:textSize="@dimen/header_text_size"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,6 +37,7 @@
         android:id="@+id/note_ver_ts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_margin"
         android:text="@string/ts_ver_text"/>
 
     <LinearLayout
@@ -47,23 +48,29 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/note_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/common_margin"
             android:text="@string/button_save"/>
         <Button
+            android:id="@+id/note_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin"
             android:text="@string/button_cancel"/>
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_margin"
         android:text="@string/input_note_text"/>
 
     <EditText
         android:id="@+id/note_body"
         android:background="@color/colorNote1"
+        android:layout_margin="@dimen/common_margin"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

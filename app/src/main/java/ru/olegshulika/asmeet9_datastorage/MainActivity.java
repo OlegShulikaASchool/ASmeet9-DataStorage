@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initListeners() {
-
+        mCreateNewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(NoteActivity.newIntent(MainActivity.this,null));
+            }
+        });
     }
 
     public static final Intent newIntent (Context context, String key, String extra){
