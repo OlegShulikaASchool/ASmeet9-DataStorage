@@ -2,7 +2,11 @@
     <string name="app_name">ASmeet9-DataStorage</string>
     <string name="note_header"><![CDATA[Note <%s>]]></string>
     <string name="input_note_text">Input note text:</string>
-    <string name="button_save">Save</string>
+    <string name="button_save">Update note</string>
+    <string name="button_add">Add new note</string>
     <string name="button_cancel">Cancel</string>
     <string name="ts_ver_text">ver.%d   \t created: %s   \t updated: %s</string>
+    <string name="default_ts_format">dd.MM.yyyy hh:mm:ss</string>
+    <string name="EmptyTitleErrorMessage">Note title can\'t be empty</string>
+    <string name="EmptyBodyErrorMessage">Note body can\'t be empty</string>
 </resources>
