@@ -9,4 +9,5 @@
     <string name="default_ts_format">dd.MM.yyyy hh:mm:ss</string>
     <string name="EmptyTitleErrorMessage">Note title can\'t be empty</string>
     <string name="EmptyBodyErrorMessage">Note body can\'t be empty</string>
+
 </resources>

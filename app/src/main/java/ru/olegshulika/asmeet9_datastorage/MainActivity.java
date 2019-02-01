@@ -35,9 +35,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu (Menu menu) {
-        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+
+        switch (id) {
+            case R.id.menu_createnew:
+                startActivityForResult(
+                        NoteActivity.newIntent(MainActivity.this,null),
+                        REQUEST_CODE_SAVE_NOTE);
+                return true;
+            case R.id.menu_settings:
+                startActivity(
+                        SettingsActivity.newIntent(MainActivity.this));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }    }
 
     private void initViews() {
         mCreateNewBtn = findViewById(R.id.button_createnew);
